@@ -11,15 +11,16 @@ SECRET_KEY = 'django-insecure-hostel-mgmt-dev-key-change-in-production-2024'
 
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    ".onrender.com",
-    "localhost",
-    "127.0.0.1"
-]
+ALLOWED_HOSTS = [".onrender.com"]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.onrender.com"
 ]
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 INSTALLED_APPS = [
