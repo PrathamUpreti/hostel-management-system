@@ -11,7 +11,11 @@ SECRET_KEY = 'django-insecure-hostel-mgmt-dev-key-change-in-production-2024'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    "hostel-management-system-g4rz.onrender.com",
+    "localhost",
+    "127.0.0.1"
+]
 CSRF_TRUSTED_ORIGINS = [
     "https://hostel-management-system-g4rz.onrender.com"
 ]
