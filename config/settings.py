@@ -12,6 +12,10 @@ SECRET_KEY = 'django-insecure-hostel-mgmt-dev-key-change-in-production-2024'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = [
+    "https://hostel-management-system-g4rz.onrender.com"
+]
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
